@@ -1,0 +1,54 @@
+# RMU SESSION 6 EXERCISE 1
+
+If in doubt about how to submit, see SUBMISSION_GUIDELINES file.
+
+In this exercise, we will be exploring how to work with background job
+processing, a technique frequently used in Ruby to place a separation between
+frontend data intake and expensive backend processing. For this exercise, you'll
+be building a simple frontend application that utilizes at least one worker
+process.
+
+## EXAMPLES
+
+* An application that generates and emails large batches of bills for a 
+  medical center in PDF form after applying some filters, using a worker
+  for the PDF generation and email sending.
+
+* An application which converts uploaded audio files into a normalized 
+  format suitable for streaming, using a worker for the audio conversion.
+
+## GUIDELINES
+
+* Your frontend component can have any sort of UI you'd like, ranging from a
+  simple command line interface to a web application.
+
+* Your backend component must do a job appropriate for a worker process,
+  meaning that it must either be time consuming, dependent on a certain
+  kind of environment, or something that otherwise benefits from being run 
+  asynchronously.
+
+* You may use any background job processing framework, but I'd recommend
+  looking at Resque if you don't already have experience with this kind
+  of work: https://github.com/defunkt/resque
+
+* Your worker should integrate with at least one third party software package.
+  It can be pretty much anything: gems, web services, and command line 
+  applications all count.
+
+* Use idiomatic Ruby conventions as much as possible. Throughout the session,
+  writing code well is as important as meeting the requirements. But don't be
+  afraid to ask for help, perfection is not expected in a first submission.
+
+* Try to pick a realistic application, one that someone might actually
+  want to use. Avoid contrived scenarios where possible. Include a
+  good example of how to use your application.
+
+* Avoid duplicating the work of other students. Announce on the mailing list
+  what you're planning to build, and add a description on the assignment
+  submission page in university-web.
+
+## QUESTIONS?
+
+Hit up the mailing list or IRC. RMU exercises are left deliberately open ended,
+and often benefit from some discussion before, during, and after you work on
+them.
